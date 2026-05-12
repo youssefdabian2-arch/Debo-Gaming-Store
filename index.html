@@ -6,7 +6,7 @@
     <title>متجر ديبو جيمينج - eFootball</title>
     <style>
         :root {
-            --primary-color: #ffd700; 
+            --primary-color: #ffd700;
             --bg-dark: #0a0a0a;
             --card-bg: #161616;
             --text-main: #ffffff;
@@ -22,9 +22,9 @@
 
         .cursor-glow {
             position: fixed;
-            width: 400px;
-            height: 400px;
-            background: radial-gradient(circle, rgba(255, 215, 0, 0.05) 0%, transparent 70%);
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.08) 0%, transparent 70%);
             border-radius: 50%;
             pointer-events: none;
             transform: translate(-50%, -50%);
@@ -36,32 +36,6 @@
             padding: 20px;
             text-align: center;
             border-bottom: 2px solid var(--primary-color);
-            position: relative;
-            z-index: 10;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 50px 20px;
-        }
-
-        .sell-button {
-            background-color: transparent;
-            color: var(--primary-color);
-            border: 2px solid var(--primary-color);
-            padding: 12px 25px;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-            display: inline-block;
-            margin-top: 15px;
-            transition: 0.3s;
-            cursor: pointer;
-        }
-
-        .sell-button:hover {
-            background-color: var(--primary-color);
-            color: #000;
         }
 
         .container {
@@ -82,27 +56,41 @@
         .account-card {
             background: var(--card-bg);
             border-radius: 15px;
-            padding: 20px;
+            padding: 25px;
             border: 1px solid #222;
             transition: 0.3s;
+            text-align: center;
             cursor: pointer;
         }
 
         .account-card:hover {
-            transform: translateY(-5px);
+            transform: scale(1.03);
             border-color: var(--primary-color);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
         }
 
         .footer-info {
             text-align: center;
-            padding: 50px;
+            margin-top: 50px;
+            padding: 40px;
             background: #000;
         }
 
-        .brand-name {
-            font-size: 1.5em;
+        .whatsapp-btn {
+            background-color: #25d366;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .brand-text {
             color: var(--primary-color);
-            margin-bottom: 10px;
+            font-size: 1.3em;
+            margin-bottom: 5px;
         }
     </style>
 </head>
@@ -111,38 +99,43 @@
     <div class="cursor-glow" id="glow"></div>
 
     <header>
-        <h1>متجر ديبو جيمينج 🎮</h1>
+        <h1>متجر ديبو جيمينج 🥷</h1>
     </header>
-
-    <div class="hero">
-        <p>يتم يومياً التعامل مع أكثر من 10 أدمنز لضمان الأمان</p>
-        <h2>أفضل تشكيلات eFootball</h2>
-        
-        <!-- الزرار الجديد اللي طلبته -->
-        <a href="https://wa.me/201501586434?text=اريد عرض حسابي للبيع او البدل" class="sell-button">
-            اعرض حسابك للبيع أو البدل
-        </a>
-    </div>
 
     <div class="container">
         <div class="shop-grid">
+            <!-- القائمة الأولى -->
             <div class="account-card">
-                <h3>حساب إيبيك كامل</h3>
-                <p>تشكيلة قوية جداً بأسعار منافسة</p>
-                <p style="color: gold;">السعر: 500 EGP</p>
+                <h3>حساب للمقايضة (بدل بس)</h3>
+                <p>تشكيلة قوية بأسعار منافسة</p>
+                <p>للتواصل: 01501586434</p>
+                <a href="https://wa.me/201501586434" class="whatsapp-btn">تواصل للبدل الآن</a>
             </div>
+
+            <!-- القائمة الثانية -->
             <div class="account-card">
-                <h3>حساب للمقايضة</h3>
-                <p>متاح للبدل بحسابات أخرى قوية</p>
-                <p style="color: gold;">تواصل للتفاصيل</p>
+                <h3>اعرض حسابك الآن</h3>
+                <p>نساعدك في بيع حسابك بأسرع وقت</p>
+                <p>للتواصل: 01501586434</p>
+                <a href="https://wa.me/201501586434" class="whatsapp-btn">اعرض حسابك</a>
+            </div>
+
+            <!-- القائمة الثالثة -->
+            <div class="account-card">
+                <h3>جروب تيليجرام</h3>
+                <p>انضم لجروبنا لمتابعة العروض</p>
+                <p>للتواصل: 01501586434</p>
+                <a href="https://wa.me/201501586434" class="whatsapp-btn">دخول الجروب</a>
             </div>
         </div>
     </div>
 
     <div class="footer-info">
-        <div class="brand-name">تحت إشراف ديبو جيمينج</div>
-        <p>المالك: يوسف</p>
-        <p>واتساب: 01501586434</p>
+        <div class="brand-text">تـحـت إشـراف ديـبـو جـيـمـيـنـج</div>
+        <p>المالك: ديبو</p>
+        <a href="https://wa.me/201501586434" style="color: #25d366; text-decoration: none; font-weight: bold;">
+            تواصل مع المالك يوسف عبر واتساب مباشرة
+        </a>
     </div>
 
     <script>
